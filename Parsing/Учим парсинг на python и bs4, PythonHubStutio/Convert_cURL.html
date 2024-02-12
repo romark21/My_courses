@@ -1,0 +1,395 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="refresh" content="7200; url=/LogOut/2" />
+
+    <title>E-klase</title>
+    <style>
+        @font-face {
+            font-family: "Glyphicons Halflings";
+            font-display: auto;
+            src: local("glyphicons-halflings-regular"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/bootstrap/glyphicons-halflings-regular.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/bootstrap/glyphicons-halflings-regular.eot);
+            text-rendering: auto
+        }
+
+        @font-face {
+            font-family: latobold;
+            font-display: auto;
+            src: local("Lato-Bold"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Bold.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Bold.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Bold.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Bold.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Bold.eot);
+            font-weight: 400;
+            font-style: normal;
+            text-rendering: auto
+        }
+
+        @font-face {
+            font-family: latoitalic;
+            font-display: auto;
+            src: local("Lato-Italic"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Italic.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Italic.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Italic.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Italic.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Italic.eot);
+            font-weight: 400;
+            font-style: italic;
+            text-rendering: auto
+        }
+
+        @font-face {
+            font-family: latomedium;
+            font-display: auto;
+            src: local("Lato-Medium"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Medium.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Medium.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Medium.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Medium.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Medium.eot);
+            font-weight: 400;
+            font-style: normal;
+            text-rendering: auto
+        }
+
+        @font-face {
+            font-family: latoregular;
+            font-display: auto;
+            src: local("Lato-Regular"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Regular.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Regular.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Regular.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Regular.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Regular.eot);
+            font-weight: 400;
+            font-style: normal;
+            text-rendering: auto
+        }
+
+        @font-face {
+            font-family: latosemibold;
+            font-display: auto;
+            src: local("Lato-Semibold"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Semibold.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Semibold.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Semibold.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Semibold.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Semibold.eot);
+            font-weight: 400;
+            font-style: normal;
+            text-rendering: auto
+        }
+
+        @font-face {
+            font-family: latolight;
+            font-display: auto;
+            src: local("Lato-Light"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Light.woff2) format("woff2"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Light.woff) format("woff"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Light.ttf) format("truetype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Light.eot?#iefix) format("embedded-opentype"),url(/Presentation/_IDACC/Shared/ResponsiveFamilyLayout/assets/fonts/Lato-Light.eot);
+            font-weight: 400;
+            font-style: normal
+        }
+    </style>
+
+
+
+    
+    
+
+    <link rel='stylesheet' type='text/css' href='/Presentation/Family/js/SPA/dist/style.70cec8c14229ec7a7937.css'>
+
+</head>
+<body>
+
+    
+
+    <style>
+        @media only screen and (max-width: 767px) {
+            select,
+            textarea,
+            input {
+                font-size: 16px !important;
+            }
+
+            .blank-space {
+                height: 30px;
+            }
+        }
+    </style>
+    <div class="super-container">
+
+
+<header class="minimal">
+    <div class="header-first">
+        <div class="container">
+            <span class="logo"></span>
+        </div>
+    </div>
+
+</header>
+
+
+        <div id="overlay"></div>
+
+        <div id="loading-info" class="loading-info">
+            Ielādējas...
+            <div class="loading-spinner"></div>
+        </div>
+
+        <div class="main-eklase-content">
+            
+
+
+<div class="container xs-no-padding">
+    
+    <div class="modal-content modal-login">
+        <div class="modal-header
+                                         parent-profile
+            ">
+            <h4 class="modal-title" id="myModalLabel">
+                Vecāku profils
+            </h4>
+            <a href="/LogOut/1" class="modal-logout">Iziet</a>
+        </div>
+        <div class="modal-body">
+
+            <div class="welcome-greeting">
+
+                <div class="welcome-greeting-image parent-male"></div>
+                <!--
+                Change classes for changing user images:
+
+                user-picture
+                parent-female
+                parent-male
+                parent-other
+                student-male
+                student-female
+                student-other
+
+                -->
+               
+                <span class="welcome-greeting-secondary">
+                    <strong>Tēti,</strong> sveicināts E-klasē!
+                </span>
+            </div>
+
+            <form id="login-profile-form" action="/SessionContext/SwitchStudentWithFamilyStudentAutoAdd" method="POST" class="onclick-spinner">
+                    <div class="modal-options">
+
+    <div class="modal-options-item student-item ">
+
+        <div class="modal-options-title">
+            <span>Šveds Marks</span>
+            <div class="modal-options-icon  student-other"></div>
+            <!--
+            Change classes for changing user images:
+
+            user-picture
+            student-male
+            student-female
+            student-other
+
+            -->
+        </div>
+
+        <div class="modal-options-choice">
+            <small><b>tētis</b> SMP-1 Nr.18, Jūrmalas Futbola skola</small>
+            <button type="button" class="modal-options-button btn-switch-student" data-homepageurl="/SystemTermsAndConditions" name="pf_id" data-tenantid="IDACC-ORG-20210126-AXNCGDGO" data-pf_id="3054226"></button>
+        </div>
+
+
+    </div>
+    <div class="modal-options-item student-item ">
+
+        <div class="modal-options-title">
+            <span>Šveds Marks</span>
+            <div class="modal-options-icon  student-other"></div>
+            <!--
+            Change classes for changing user images:
+
+            user-picture
+            student-male
+            student-female
+            student-other
+
+            -->
+        </div>
+
+        <div class="modal-options-choice">
+            <small><b>tētis</b> 8.b, Jūrmalas Majoru vidusskola</small>
+            <button type="button" class="modal-options-button btn-switch-student" data-homepageurl="/SystemTermsAndConditions" name="pf_id" data-tenantid="IDACC-ORG-20120101-66F5D720" data-pf_id="3742295"></button>
+        </div>
+
+
+    </div>
+
+
+                    </div>
+
+
+
+
+
+                        <a href="" class="link-archived-profiles">Arhīvs</a>
+                    <div class="modal-options archhived-profiles-container"   style="display: none;"  >
+    <div class="modal-options-item student-item ">
+
+        <div class="modal-options-title">
+            <span>Šveds Marks</span>
+            <div class="modal-options-icon  student-other"></div>
+            <!--
+            Change classes for changing user images:
+
+            user-picture
+            student-male
+            student-female
+            student-other
+
+            -->
+        </div>
+
+        <div class="modal-options-choice">
+            <small><b>tētis</b> 7.b, Jūrmalas Jaundubultu pamatskola (2022./2023. m.g.)</small>
+            <button type="button" class="modal-options-button btn-switch-student" data-homepageurl="/Family/UserNotRegistredInStudyYear/UserHasNoActiveClass" name="pf_id" data-tenantid="IDACC-ORG-20101213-14FA6CF2" data-pf_id="1830226"></button>
+        </div>
+
+
+    </div>
+    <div class="modal-options-item student-item ">
+
+        <div class="modal-options-title">
+            <span>Šveds Marks</span>
+            <div class="modal-options-icon  student-other"></div>
+            <!--
+            Change classes for changing user images:
+
+            user-picture
+            student-male
+            student-female
+            student-other
+
+            -->
+        </div>
+
+        <div class="modal-options-choice">
+            <small><b>tētis</b> MT-5 Nr. 60 (Futbols), Jūrmalas Sporta skola (2020./2021. m.g.)</small>
+            <button type="button" class="modal-options-button btn-switch-student" data-homepageurl="/Family/UserNotRegistredInStudyYear/UserHasNoActiveClass" name="pf_id" data-tenantid="IDACC-ORG-20170825-0UBH4G3Z" data-pf_id="2173018"></button>
+        </div>
+
+
+    </div>
+
+                    </div>
+
+
+                <input type="hidden" name="RedirectUrl" class="hidden-redirect-url" value="" />
+                <input type="hidden" name="pf_id" class="hidden-pf_id" value="" />
+                <input type="hidden" name="TenantId" class="hidden-TenantId" value="" />
+
+            </form>
+
+            <div class="missing-profile">
+                Neredzu skolēnu/skolu
+            </div>
+        </div>
+
+    </div>
+
+    <div class="missing-profile__modal is-hidden">
+        <div class="modal__head">
+            Neredzu skolēnu/skolu
+        </div>
+
+        <div class="modal__body">
+            Ja profilu izvēlē pietrūkst kāds skolēns vai skola, sazinieties ar klases audzinātāju, un palūdziet, lai reģistrē Jūsu telefona numuru <span>E‑klasē.</span> Tiklīdz tas būs izdarīts, varēsiet piekļūt šim profilam.
+        </div>
+
+        <div class="modal__close"></div>
+    </div>
+
+        <div style="text-align: center; margin: 15px 0;">
+            <a style="color: #0A8DD1;" href="/SPA/Family/NoLayout#/settings/add-pupil">Pievienot skolēnu</a>
+        </div>
+</div>
+
+
+
+
+
+    
+
+
+
+        </div>
+
+
+<footer>
+        <div class="container">
+            <nav class="footer-nav">
+                    <ul>
+                        <li class="footer-nav-item"><a href="/Family/TechnicalSupport" class="onclick-spinner">Tehniskais atbalsts</a></li>
+                    </ul>
+                
+
+            </nav>
+
+            <div class="copyright">
+            SIA “Izglītības sistēmas” 2004-2023:53 <br />
+            <i>Bezmaksas komplekts</i>
+            </div>
+
+        </div>
+</footer>
+
+
+
+
+
+    </div>
+
+
+    <script lang="text/javascript" src="/Presentation/_IDACC/_js/family/vendor/jquery.js"></script>
+
+    
+
+
+
+    <script src='/Presentation/Family/js/SPA/dist/vendor.f0ddb580c8da7141382e.js'></script>
+    
+    <script src='/Presentation/Family/js/SPA/dist/IDACC.7609f3b97843a9f2e799.js'></script>
+    
+    <script src='/Presentation/Family/js/SPA/dist/style.70e3629e138f06c00215.js'></script>
+
+
+    
+    <script src="/idacc/js/family_login_profile?v=RKK67tal5DA6TJqpHbbenxnXcvqOTAtsPMgJsSfl4yU1"></script>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="modal modal-technical lesson-times-modal" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog timetable-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="#" class="modal-close" data-dismiss="modal"></a>
+
+                <h1 class="default-lesson-times-heading">Notikusi kļūda!</h1>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="device-xs visible-xs"></div>
+    <div class="device-sm visible-sm"></div>
+    <div class="device-md visible-md"></div>
+    <div class="device-lg visible-lg"></div>
+
+    <script>
+        var overlayElement = document.getElementById("overlay");
+        var loadingInfoElement = document.getElementById("loading-info");
+
+
+        if (typeof overlayElement !== "undefined" && overlayElement !== null) {
+            overlayElement.className += " hidden"; //IE9 supported
+        }
+
+        if (typeof loadingInfoElement !== "undefined" && loadingInfoElement !== null) {
+            loadingInfoElement.className += " hidden"; //IE9 supported
+        }
+    </script>
+</body>
+</html>

@@ -97,7 +97,7 @@ if __name__ == "__main__":
     unittest.main()
 
 """
-Примет кода из коминтариев:
+Примет кода из комментариев:
 
 import unittest
 from selenium import webdriver

@@ -26,11 +26,11 @@ pytest -s -v test_stepik_autorization_Задание_авторизация_на
 """
 
 
-@pytest.fixture
-def driver():
-    driver = webdriver.Chrome()
-    yield driver
-    driver.quit()
+# @pytest.fixture
+# def driver():
+#     driver = webdriver.Chrome()
+#     yield driver
+#     driver.quit()
 
 
 def test_authorization(driver):
